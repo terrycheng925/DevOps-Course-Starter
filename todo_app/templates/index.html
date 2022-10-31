@@ -12,9 +12,21 @@
       <h2>Items</h2>
       <ul class="list-group mb-4">
        
+        
+
        {% for item in items %}
             <li> ID : {{ item.id }} - {{ item.title }} - {{item.status}}</li>
-{% endfor %}
+            <li> {{ my_item}} </li>
+       {% endfor %}
+
+       <form actioin=/ method="post">
+          
+          <label > Add To Do (1 to 98 chars):</label>
+          <input type="text" name="todo_item"  minlength="1" maxlength="98" size="100">
+
+          <input type="submit" value="ADD" />
+       </form>
+
       </ul>
     </div>
   </div>
