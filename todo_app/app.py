@@ -12,7 +12,7 @@ app.config.from_object(Config())
 
 @app.route('/', methods=["POST", "GET"])
 def index():
-    print(os.getenv('TRELLO_APITOKEN')
+    print(os.getenv('TRELLO_APITOKEN'))
     items = get_items()
 
     if request.method == "POST":
